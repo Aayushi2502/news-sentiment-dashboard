@@ -1,33 +1,58 @@
-**Daily News Sentiment Dashboard**
+# Daily News Sentiment Dashboard 📰
 
-A Streamlit-based web app that fetches the latest news articles using the NewsAPI, analyzes their sentiment using TextBlob, and displays interactive charts and top headlines categorized by sentiment.
+A Streamlit-based NLP application that **fetches current news articles and analyzes headline sentiment** using TextBlob.
 
-Features:
+The dashboard categorizes news as positive, neutral, or negative and visualizes sentiment patterns through interactive charts.
 
-- Fetches 100+ daily news articles using **NewsAPI**
-- Analyzes sentiment (Positive, Neutral, Negative) using **TextBlob**
-- Visualizes sentiment trends using **Plotly**
-- Highlights top 5 most positive and negative headlines
-- Grouped sentiment by date for time-based insights
+## Features
 
-Installation:
+* Fetches daily news using NewsAPI
+* Sentiment analysis with TextBlob
+* Positive, Neutral & Negative classification
+* Interactive sentiment visualizations
+* Top positive and negative headlines
+* Date-wise sentiment analysis
 
-1. Clone the repository:
-   git clone https://github.com/yourusername/news-sentiment-dashboard.git
-   cd news-sentiment-dashboard
+## Tech Stack
 
-2. Set up virtual environment:
-  python -m venv venv
-  venv\Scripts\activate  # On Windows
+* Python
+* Streamlit
+* TextBlob
+* NewsAPI
+* Plotly
+* Pandas
 
-3. Install Dependencies:
-   pip install -r requirements.txt
-   
-4. Add your API key:
-   Create a .env file in the project root:
-   NEWSAPI_KEY=your_newsapi_key_here
-  # Get your key from https://newsapi.org
+## How It Works
 
-5. Run the app:
-   streamlit run app.py
+1. Fetches recent news articles using NewsAPI.
+2. TextBlob calculates the sentiment of each headline.
+3. Headlines are classified as Positive, Neutral, or Negative.
+4. Results are visualized through an interactive dashboard.
+5. The most positive and negative headlines are highlighted.
 
+## Run Locally
+
+```bash id="ng1nss"
+git clone https://github.com/YOUR_USERNAME/news-sentiment-dashboard.git
+cd news-sentiment-dashboard
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Add your NewsAPI key to a `.env` file:
+
+```text
+NEWSAPI_KEY=your_newsapi_key_here
+```
+
+## Future Improvements
+
+* Use transformer-based sentiment models
+* Add topic/category filtering
+* Compare sentiment across different news sources
+* Add historical sentiment trend analysis
+
+## Author
+
+**Aayushi Bhathgara**
+Computer Science & Engineering — Artificial Intelligence and Machine Learning
